@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ea4e30b-05c4-4908-b340-770ae30a2b2d" name="Default Changelist" comment="" />
+    <list default="true" id="8ea4e30b-05c4-4908-b340-770ae30a2b2d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/feed/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/feed/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/feed/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/feed/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news_portal/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/news_portal/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news_portal/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/news_portal/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/catagories-post.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/catagories-post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/news_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/news_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/single-post.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/single-post.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +35,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1W6YVOMGDLk4yrwE1oCBgXgGDxz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -27,8 +50,19 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/static/scss" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="newsportal" type="Python.DjangoServer" factoryName="Django server">
@@ -77,7 +111,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578471534633</updated>
-      <workItem from="1578471538777" duration="3141000" />
+      <workItem from="1578471538777" duration="17205000" />
+      <workItem from="1578549275652" duration="753000" />
+      <workItem from="1578550055952" duration="1082000" />
+      <workItem from="1578566020816" duration="7238000" />
+      <workItem from="1578578585383" duration="807000" />
+      <workItem from="1578582819703" duration="227000" />
+      <workItem from="1578928166629" duration="214000" />
+      <workItem from="1579073844562" duration="310000" />
     </task>
     <servers />
   </component>
@@ -85,9 +126,17 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="464" y="155" key="SettingsEditor" timestamp="1578471648322">
+    <state x="464" y="155" key="SettingsEditor" timestamp="1579073906813">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="464" y="155" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1578471648322" />
+    <state x="464" y="155" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1579073906813" />
+    <state x="797" y="185" width="316" height="667" key="VCS.ChangeListViewerDialog" timestamp="1578477987813">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="797" y="185" width="316" height="667" key="VCS.ChangeListViewerDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578477987813" />
+    <state x="623" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1578478087652">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578478087652" />
   </component>
 </project>

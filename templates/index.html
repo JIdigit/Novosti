@@ -1,3 +1,4 @@
+{% load  static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,13 +10,14 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>The News Paper - News &amp; Lifestyle Magazine Template</title>
+    <title>Topchik Kabar - News Portal</title>
+    <link rel="stylesheet" href={% static "css" %}>
 
     <!-- Favicon -->
-    <link rel="icon" href="img/core-img/favicon.ico">
+    <link rel="icon" href={% static "img/core-img/favicon.ico" %}>
 
     <!-- Core Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../static/style.css">
 
 </head>
 
@@ -31,22 +33,15 @@
                         <div class="top-header-content d-flex align-items-center justify-content-between">
                             <!-- Logo -->
                             <div class="logo">
-                                <a href="index.html"><img src="img/core-img/logo.png" alt=""></a>
+                                <a href="index.html"><img src= {% static "img/core-img/logo.png" %} alt=""></a>
                             </div>
 
                             <!-- Login Search Area -->
                             <div class="login-search-area d-flex align-items-center">
                                 <!-- Login -->
                                 <div class="login d-flex">
-                                    <a href="#">Login</a>
-                                    <a href="#">Register</a>
-                                </div>
-                                <!-- Search Form -->
-                                <div class="search-form">
-                                    <form action="#" method="post">
-                                        <input type="search" name="search" class="form-control" placeholder="Search">
-                                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                                    </form>
+                                    <a href="#">Логин</a>
+                                    <a href="#">Регистрация</a>
                                 </div>
                             </div>
                         </div>
@@ -84,92 +79,13 @@
                             <div class="classynav">
                                 <ul>
                                     <li class="active"><a href="index.html">Home</a></li>
-                                    <li><a href="#">Pages</a>
-                                        <ul class="dropdown">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="catagories-post.html">Catagories</a></li>
-                                            <li><a href="single-post.html">Single Articles</a></li>
-                                            <li><a href="about.html">About Us</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                            <li><a href="#">Dropdown</a>
-                                                <ul class="dropdown">
-                                                    <li><a href="index.html">Home</a></li>
-                                                    <li><a href="catagories-post.html">Catagories</a></li>
-                                                    <li><a href="single-post.html">Single Articles</a></li>
-                                                    <li><a href="about.html">About Us</a></li>
-                                                    <li><a href="contact.html">Contact</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Mega Menu</a>
-                                        <div class="megamenu">
-                                            <ul class="single-mega cn-col-4">
-                                                <li class="title">Catagories</li>
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="catagories-post.html">Catagories</a></li>
-                                                <li><a href="single-post.html">Single Articles</a></li>
-                                                <li><a href="about.html">About Us</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                            </ul>
-                                            <ul class="single-mega cn-col-4">
-                                                <li class="title">Catagories</li>
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="catagories-post.html">Catagories</a></li>
-                                                <li><a href="single-post.html">Single Articles</a></li>
-                                                <li><a href="about.html">About Us</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                            </ul>
-                                            <ul class="single-mega cn-col-4">
-                                                <li class="title">Catagories</li>
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="catagories-post.html">Catagories</a></li>
-                                                <li><a href="single-post.html">Single Articles</a></li>
-                                                <li><a href="about.html">About Us</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                            </ul>
-                                            <div class="single-mega cn-col-4">
-                                                <!-- Single Featured Post -->
-                                                <div class="single-blog-post small-featured-post d-flex">
-                                                    <div class="post-thumb">
-                                                        <a href="#"><img src="img/bg-img/23.jpg" alt=""></a>
-                                                    </div>
-                                                    <div class="post-data">
-                                                        <a href="#" class="post-catagory">Travel</a>
-                                                        <div class="post-meta">
-                                                            <a href="#" class="post-title">
-                                                                <h6>Pellentesque mattis arcu massa, nec fringilla turpis eleifend id.</h6>
-                                                            </a>
-                                                            <p class="post-date"><span>7:00 AM</span> | <span>April 14</span></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <!-- Single Featured Post -->
-                                                <div class="single-blog-post small-featured-post d-flex">
-                                                    <div class="post-thumb">
-                                                        <a href="#"><img src="img/bg-img/24.jpg" alt=""></a>
-                                                    </div>
-                                                    <div class="post-data">
-                                                        <a href="#" class="post-catagory">Politics</a>
-                                                        <div class="post-meta">
-                                                            <a href="#" class="post-title">
-                                                                <h6>Augue semper congue sit amet ac sapien. Fusce consequat.</h6>
-                                                            </a>
-                                                            <p class="post-date"><span>7:00 AM</span> | <span>April 14</span></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li><a href="#">Politics</a></li>
-                                    <li><a href="#">Breaking News</a></li>
-                                    <li><a href="#">Business</a></li>
-                                    <li><a href="#">Technology</a></li>
-                                    <li><a href="#">Health</a></li>
-                                    <li><a href="#">Travel</a></li>
-                                    <li><a href="#">Sports</a></li>
+                                    <li><a href="#">Categories</a></li>
+                                    <li><a href="#">PART 2</a></li>
+                                    <li><a href="#">PART 3</a></li>
+                                    <li><a href="#">PART 4</a></li>
+                                    <li><a href="#">PART 5</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">PART 6</a></li>
                                     <li><a href="contact.html">Contact</a></li>
                                 </ul>
                             </div>
@@ -181,51 +97,6 @@
         </div>
     </header>
     <!-- ##### Header Area End ##### -->
-
-    <!-- ##### Hero Area Start ##### -->
-    <div class="hero-area">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12 col-lg-8">
-                    <!-- Breaking News Widget -->
-                    <div class="breaking-news-area d-flex align-items-center">
-                        <div class="news-title">
-                            <p>Breaking News</p>
-                        </div>
-                        <div id="breakingNewsTicker" class="ticker">
-                            <ul>
-                                <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
-                                <li><a href="#">Welcome to Colorlib Family.</a></li>
-                                <li><a href="#">Nam eu metus sitsit amet, consec!</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Breaking News Widget -->
-                    <div class="breaking-news-area d-flex align-items-center mt-15">
-                        <div class="news-title title2">
-                            <p>International</p>
-                        </div>
-                        <div id="internationalTicker" class="ticker">
-                            <ul>
-                                <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
-                                <li><a href="#">Welcome to Colorlib Family.</a></li>
-                                <li><a href="#">Nam eu metus sitsit amet, consec!</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Hero Add -->
-                <div class="col-12 col-lg-4">
-                    <div class="hero-add">
-                        <a href="#"><img src="img/bg-img/hero-add.gif" alt=""></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ##### Hero Area End ##### -->
 
     <!-- ##### Featured Post Area Start ##### -->
     <div class="featured-post-area">
@@ -249,10 +120,7 @@
                                         <p class="post-author">By <a href="#">Christinne Williams</a></p>
                                         <p class="post-excerp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu metus sit amet odio sodales placerat. Sed varius leo ac leo fermentum, eu cursus nunc maximus. Integer convallis nisi nibh, et ornare neque ullamcorper ac. Nam id congue lectus, a venenatis massa. Maecenas justo libero, vulputate vel nunc id, blandit feugiat sem. </p>
                                         <!-- Post Like & Post Comment -->
-                                        <div class="d-flex align-items-center">
-                                            <a href="#" class="post-like"><img src="img/core-img/like.png" alt=""> <span>392</span></a>
-                                            <a href="#" class="post-comment"><img src="img/core-img/chat.png" alt=""> <span>10</span></a>
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>
