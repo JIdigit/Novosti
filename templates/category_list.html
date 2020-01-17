@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    {% for category in categories %}
+        <li><a href="{% url 'news_list_slug' category.slug %}">{{ category.name }}</a> </li>
+    {% endfor %}
+
+
+{% endblock %}

@@ -42,6 +42,11 @@ def news_list(request, category_slug=None):
                                               'categories': categories,
                                               'news': news})
 
+class CategorListView(ListView):
+    model = Category
+    template_name = 'category_list.html'
+    context_object_name = 'categories'
+
 
 def post_detail(request, post_id):
     likes = Like.objects.filter(news_likes=News(id=post_id))
