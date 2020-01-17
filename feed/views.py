@@ -4,6 +4,7 @@ from .forms import UserRegistrationForm, UserLogin, NewsCreateForm, CommentForm,
 from django.contrib.auth import authenticate, login, logout
 from django.views.generic import CreateView, ListView
 from django.contrib.auth.models import User
+from django.db.models import Q
 
 
 
@@ -121,6 +122,24 @@ def user_logout(request):
 #     model = Category
 #     template_name = 'category_list.html'
 #     context_object_name = 'categories'
+#
+# def search_news(request):
+#     title = request.
+#
+#
+#     # title = News.objects.filter(title='fsadf').get()
+#     return render(request, 'test.html', {'title': title})
+#     # if request.POST in title.title:
+#     #     pass
 
 
+class SearchResultsView(ListView):
+    model = News
+    template_name = 'search_by_title_and_body.html'
 
+    def get_queryset(self): # новый
+        query = self.request.GET.get('search')
+        object_list = News.objects.filter(
+            Q(title__icontains=query) | Q(body__icontains=query)
+        )
+        return object_list
