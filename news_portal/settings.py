@@ -25,7 +25,7 @@ SECRET_KEY = 'actrb!iz(+5#=c4q@iv*0#+8w3jok=m+elrfsi^&r_dl%-z^!s'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'sslserver',
+    'social_django',
     'feed',
 
 ]
@@ -52,6 +54,11 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'news_portal.urls'
+
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',
+    'social_core.backends.facebook.FacebookOAuth2',
+)
 
 TEMPLATES = [
     {
@@ -120,7 +127,19 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+# STATIC_ROOT = 'static'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+LOGIN_REDIRECT_URL = 'news_list'
+
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+SOCIAL_AUTH_FACEBOOK_KEY = '2594987440619196'
+SOCIAL_AUTH_FACEBOOK_SECRET = 'e8a8b99a7426797c24d07c208516cc29'
+SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
+
+
+
 
