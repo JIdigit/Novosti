@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    {{ user }}
+    {{ request.user }}
+    <form action="" method="post">
+    {% csrf_token %}
+    {{ news_form.as_p }}
+        <input type="submit" value="Create POST">
+    </form>
+
+
+{% endblock %}

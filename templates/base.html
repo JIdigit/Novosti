@@ -40,10 +40,27 @@
                         <!-- Login Search Area -->
                         <div class="login-search-area d-flex align-items-center">
                             <!-- Login -->
-                            <div class="login d-flex">
-                                <a href="about.html">Логин</a>
-{#                                <a href="{% url 'login' %}">Регистрация</a>#}
-                            </div>
+
+                            {% if request.user.is_authenticated %}
+                                <div class="login d-flex">
+                                    <a href="{% url 'logout' %}"> Выйти </a>
+                                    {#                                <a href="{% url 'login' %}">Регистрация</a>#}
+                                </div>
+
+                            {% else %}
+                                <div class="login d-flex">
+                                    <a href="{% url 'registration' %}">Регистрация</a>
+                                    {#                                <a href="{% url 'login' %}">Регистрация</a>#}
+                                </div>
+                                <div class="login d-flex">
+                                    <a href="{% url 'login' %}">Логин</a>
+                                    {#                                <a href="{% url 'login' %}">Регистрация</a>#}
+                                </div>
+                                <div class="login d-flex">
+                                    <a href="{% url 'social:begin' 'facebook' %}">Логин через Facebook</a>
+                                    {#                                <a href="{% url 'login' %}">Регистрация</a>#}
+                                </div>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
@@ -88,6 +105,9 @@
                                 <li><a href="#">About Us</a></li>
                                 <li><a href="#">PART 6</a></li>
                                 <li><a href="contact.html">Contact</a></li>
+                                {% if request.user.is_authenticated %}
+                                    <li><a href="{% url 'news_create' %}">Создать Новость</a></li>
+                                {% endif %}
                             </ul>
                         </div>
                         <!-- Nav End -->

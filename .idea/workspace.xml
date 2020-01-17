@@ -2,22 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ea4e30b-05c4-4908-b340-770ae30a2b2d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/news_create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/feed/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/feed/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed/migrations/0002_auto_20200109_0558.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed/migrations/0003_auto_20200109_0610.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed/migrations/0004_auto_20200109_0617.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed/migrations/0005_auto_20200109_0621.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed/migrations/0006_auto_20200109_0623.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed/migrations/0007_auto_20200109_0625.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed/migrations/0008_auto_20200109_1044.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed/migrations/0009_auto_20200109_1051.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed/migrations/0010_auto_20200109_1052.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/feed/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/feed/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/feed/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/feed/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/feed/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/feed/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/feed/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news_portal/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/news_portal/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news_portal/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/news_portal/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/scss/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/catagories-post.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/catagories-post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/news_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/news_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/single-post.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/single-post.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,6 +128,8 @@
       <workItem from="1578582819703" duration="227000" />
       <workItem from="1578928166629" duration="214000" />
       <workItem from="1579073844562" duration="310000" />
+      <workItem from="1579241172461" duration="12860000" />
+      <workItem from="1579280215677" duration="2054000" />
     </task>
     <servers />
   </component>

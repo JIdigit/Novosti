@@ -22,13 +22,37 @@
                             <p class="post-except">{{ post.body  }} <a href=""> </a>       </p>
                             <!-- Post Like & Post Comment -->
                             <div class="d-flex align-items-center">
-                                <a href="#" class="post-like"><img src="{% static "img/core-img/like.png" %}" alt=""> <span>0</span></a>
-                                <a href="#" class="post-comment"><img src="{% static "img/core-img/chat.png" %}"  alt=""> <span>10</span></a>
+                                <a href="#" class="post-like"><img src="{% static "img/core-img/like.png" %}" alt=""> <span>{{ likes.count }}</span></a>
+                                <a href="#" class="post-comment"><img src="{% static "img/core-img/chat.png" %}"  alt=""> <span>{{ comments.count }}</span></a>
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div>\
+    {% if request.user.is_authenticated %}
+        {% if reply %}
+            {{ reply }}
+            {% else %}
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ like_form }}
+        <input type="submit" value="LIKE">
+    </form>
+            {% endif %}
+    {% endif %}
+
+
+    {% for comment in comments %}
+        <li>{{ comment.text }} </li>
+    {% endfor %}
+    {% if request.user.is_authenticated %}
+        <form action="" method="post">
+        {% csrf_token %}
+        {{ comment_form.as_p }}
+            <input type="submit" value="COMMENT">
+        </form>
+    {% endif %}
 {% endblock %}

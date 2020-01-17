@@ -1,5 +1,5 @@
 from django.db import models
-
+from django.contrib.auth.models import User
 
 class Category(models.Model):
     name = models.CharField(max_length=80, blank=False)
@@ -14,26 +14,14 @@ class Category(models.Model):
         return self.name
 
 
-class Author(models.Model):
-    name = models.CharField(max_length=100, blank=False)
-
-    class Meta:
-        ordering = ('-name',)
-
-    def __str__(self):
-        return self.name
 
 
 class News(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     category = models.ForeignKey(Category, related_name='news', on_delete=models.CASCADE)
-    author = models.ForeignKey(Author, related_name='author', default=None, on_delete=models.CASCADE)
     title = models.CharField(max_length=255)
-    slug = models.SlugField(max_length=255)
-    image_height = models.IntegerField(default=0)
-    image_width = models.IntegerField(default=0)
+    slug = models.SlugField(max_length=255, blank=True)
     image = models.ImageField(upload_to='news_images/%Y/%m/%d',
-                              height_field='image_height',
-                              width_field='image_width',
                               blank=True,
                               max_length=200,
                               )
@@ -50,11 +38,19 @@ class News(models.Model):
 
 
 class Comments(models.Model):
-    post = models.ForeignKey(News, related_name='comment', on_delete=models.CASCADE)
+    news = models.ForeignKey(News, related_name='comment', on_delete=models.CASCADE)
+    text = models.TextField(blank=True)
 
+    # def __str__(self):
+    #     return self.post
 
+class Like(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    news_likes = models.ForeignKey(News, on_delete=models.CASCADE)
+    created = models.DateTimeField(auto_now_add=True)
 
-
+    def __str__(self):
+        return f"{self.news_likes}"
 
 
 
